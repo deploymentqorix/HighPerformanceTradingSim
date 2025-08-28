@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/CliClient.dir/src/cli_client.cpp.o -o CliClient  -lzmq 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/TradingUI.dir/src/main_ui.cpp.o CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o -o TradingUI 

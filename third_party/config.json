@@ -1,0 +1,8 @@
+{
+  "risk_manager": {
+    "max_order_size": 1000
+  },
+  "csv_reader": {
+    "filepath": "data.csv"
+  }
+}
