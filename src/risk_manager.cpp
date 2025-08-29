@@ -1,29 +1,27 @@
 #include "risk_manager.h"
-#include <fstream>
+#include "order.h"
+#include "trade.h"
 #include <iostream>
-#include <nlohmann/json.hpp>
 
-using json = nlohmann::json;
-
-RiskManager::RiskManager(double maxOrder, double maxExp) : maxOrderSize(maxOrder), maxExposure(maxExp) {}
+RiskManager::RiskManager(int maxOrderSize, double maxExposure)
+    : maxOrderSize(maxOrderSize), maxExposure(maxExposure) {}
 
 bool RiskManager::validateOrder(const Order& order) {
-    if (order.qty > maxOrderSize) {
-        std::cerr << "[Risk Alert] Order size exceeds limit!\n";
-        logAudit("Order rejected: size exceeds limit.");
+    // CHANGED: from order.qty to order.quantity
+    if (order.quantity > maxOrderSize) {
+        std::cerr << "Risk Check Failed: Order size " << order.quantity
+                  << " exceeds max size " << maxOrderSize << std::endl;
         return false;
     }
+    // TODO: Add more checks (e.g., exposure)
     return true;
 }
 
 double RiskManager::calculateExposure(const std::vector<Trade>& trades) {
     double exposure = 0.0;
     for (const auto& t : trades) {
-        exposure += t.qty * t.price;
-    }
-    if (exposure > maxExposure) {
-        std::cerr << "[Risk Alert] Portfolio exposure exceeds limit!\n";
-        logAudit("Exposure exceeded.");
+        // CHANGED: from t.qty to t.quantity
+        exposure += t.quantity * t.price;
     }
     return exposure;
 }
@@ -31,33 +29,9 @@ double RiskManager::calculateExposure(const std::vector<Trade>& trades) {
 double RiskManager::calculatePnL(const std::vector<Trade>& trades, double marketPrice) {
     double pnl = 0.0;
     for (const auto& t : trades) {
-        pnl += (marketPrice - t.price) * t.qty;
+        // This assumes all trades are BUYs for simplicity
+        // CHANGED: from t.qty to t.quantity
+        pnl += (marketPrice - t.price) * t.quantity;
     }
     return pnl;
-}
-
-void RiskManager::generateRiskReport(const std::string& filename) {
-    json report;
-    report["alerts"] = auditLog;
-    std::ofstream file(filename);
-    file << report.dump(4);
-}
-
-void RiskManager::logAudit(const std::string& msg) {
-    auditLog.push_back(msg);
-}
-
-double RiskManager::calculateVaR(const std::vector<Trade>& trades, double confidenceLevel) {
-    // Simplified VaR = exposure * Z-score * volatility
-    double exposure = calculateExposure(trades);
-    double z = (confidenceLevel == 0.95) ? 1.65 : 2.33;
-    double volatility = 0.02; // placeholder
-    return exposure * z * volatility;
-}
-
-void RiskManager::runStressTest(const std::vector<Trade>& trades) {
-    double exposure = calculateExposure(trades);
-    double stressedLoss = exposure * 0.3; // assume 30% market crash
-    std::cerr << "[Stress Test] Exposure " << exposure << " → Potential Loss " << stressedLoss << "\n";
-    logAudit("Stress test run: potential loss " + std::to_string(stressedLoss));
 }

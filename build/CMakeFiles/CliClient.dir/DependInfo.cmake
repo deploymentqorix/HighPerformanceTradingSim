@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "CliClient_autogen/timestamp" "custom" "CliClient_autogen/deps"
+  "/home/l-100963/HighPerformanceTradingSim/build/CliClient_autogen/mocs_compilation.cpp" "CMakeFiles/CliClient.dir/CliClient_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/CliClient.dir/CliClient_autogen/mocs_compilation.cpp.o.d"
   "/home/l-100963/HighPerformanceTradingSim/src/cli_client.cpp" "CMakeFiles/CliClient.dir/src/cli_client.cpp.o" "gcc" "CMakeFiles/CliClient.dir/src/cli_client.cpp.o.d"
   )
 

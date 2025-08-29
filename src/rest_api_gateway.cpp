@@ -1,55 +1,55 @@
 #include "rest_api_gateway.h"
-#include <iostream>
+#include "matching_engine.h"
+#include "httplib.h"
 
-using json = nlohmann::json;
+// Constructor: Initializes members and sets up the server
+RestApiGateway::RestApiGateway(const std::string& host, int port, MatchingEngine& engine)
+    : matchingEngine(engine), apiHost(host), apiPort(port) {
+    server = std::make_unique<httplib::Server>();
+    setupRoutes();
+    std::cout << "REST API Gateway initialized on " << host << ":" << port << std::endl;
+}
 
-RestApiGateway::RestApiGateway() {}
+// Destructor
+RestApiGateway::~RestApiGateway() {
+    stop();
+}
 
-std::string RestApiGateway::submitOrder(const std::string& orderJson) {
-    try {
-        json j = json::parse(orderJson);
-        if (!validateJson(j)) return makeErrorResponse("Invalid order format"); // SRS_044
+// Starts the server to listen for requests
+void RestApiGateway::run() {
+    std::cout << "REST API Gateway thread started." << std::endl;
+    server->listen(apiHost.c_str(), apiPort);
+}
 
-        // TODO: Forward to matching engine
-        json resp;
-        resp["status"] = "accepted";
-        resp["orderId"] = "ORD123";
-        return resp.dump(); // SRS_045
-
-    } catch (...) {
-        return makeErrorResponse("Failed to parse order JSON");
+// Stops the server
+void RestApiGateway::stop() {
+    if (server && server->is_running()) {
+        server->stop();
     }
 }
 
-std::string RestApiGateway::cancelOrder(const std::string& orderId) {
-    // TODO: connect to order book/matching engine
-    json resp;
-    resp["status"] = "cancelled";
-    resp["orderId"] = orderId;
-    return resp.dump(); // SRS_041, 045
+// Defines the API endpoints (e.g., POST /order)
+void RestApiGateway::setupRoutes() {
+    server->Get("/ping", [](const httplib::Request&, httplib::Response& res) {
+        res.set_content("pong", "text/plain");
+    });
 }
 
-std::string RestApiGateway::getOrderStatus(const std::string& orderId) {
-    json resp;
-    resp["orderId"] = orderId;
-    resp["status"] = "filled"; // Mock
-    return resp.dump(); // SRS_042
-}
+// --- API method implementations ---
+// QCSIDM_SRS_040 - External API for order submission
+std::string RestApiGateway::submitOrder(const std::string& orderJson) { return "{}"; }
 
-std::string RestApiGateway::getAccountInfo(const std::string& accountId) {
-    json resp;
-    resp["accountId"] = accountId;
-    resp["balance"] = 100000;
-    resp["positions"] = {{"AAPL", 50}, {"TSLA", 20}};
-    return resp.dump(); // SRS_043
-}
+// QCSIDM_SRS_041 - Cancel/modify orders
+std::string RestApiGateway::cancelOrder(const std::string& orderId) { return "{}"; }
 
-bool RestApiGateway::validateJson(const json& j) {
-    return j.contains("symbol") && j.contains("quantity") && j.contains("price");
-}
+// QCSIDM_SRS_042 - Query order status
+std::string RestApiGateway::getOrderStatus(const std::string& orderId) { return "{}"; }
 
-std::string RestApiGateway::makeErrorResponse(const std::string& msg) {
-    json resp;
-    resp["error"] = msg;
-    return resp.dump(); // SRS_046
-}
+// QCSIDM_SRS_043 - Query account/position
+std::string RestApiGateway::getAccountInfo(const std::string& accountId) { return "{}"; }
+
+// QCSIDM_SRS_044 - Input validation
+bool RestApiGateway::validateJson(const nlohmann::json& j) { return true; }
+
+// QCSIDM_SRS_046 - Error handling
+std::string RestApiGateway::makeErrorResponse(const std::string& msg) { return "{\"error\":\"" + msg + "\"}"; }

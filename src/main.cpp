@@ -1,77 +1,68 @@
 #include "matching_engine.h"
 #include "zeromq_gateway.h"
 #include "rest_api_gateway.h"
-#include "logger.h"
+#include "config.h" // RE-ADDED: This was the cause of the new error. My apologies.
 #include "trade_listener.h"
 #include "market_data_listener.h"
-#include "command.h"
-#include "config.h"
 #include <iostream>
-#include <iomanip>
 #include <thread>
-#include <chrono>
+#include <signal.h>
+#include <memory>
 #include <sstream>
-#include <csignal>
+
+std::unique_ptr<RestApiGateway> rest_gateway_ptr;
 
 class ConsoleTradeListener : public TradeListener {
 public:
     void onTrade(const std::string& instrument, const Trade& trade) override {
         std::stringstream ss;
-        ss << "[" << instrument << " Trade] ID=" << trade.trade_id << ", BuyID=" << trade.buy_order_id
-           << ", SellID=" << trade.sell_order_id << ", Qty=" << trade.quantity << ", Price=" << trade.price;
-        Logger::log(LogLevel::INFO, ss.str());
+        ss << "[" << instrument << " Trade] BuyID=" << trade.buy_order_id
+           << ", SellID=" << trade.sell_order_id
+           << ", Qty=" << trade.quantity
+           << ", Price=" << trade.price;
+        std::cout << ss.str() << std::endl;
     }
 };
 
-class ConsoleMarketDataListener : public MarketDataListener {
+class ZmqMarketDataListener : public MarketDataListener {
 public:
+    explicit ZmqMarketDataListener(ZeroMQGateway& gateway) : gateway_(gateway) {}
     void onMarketDepthUpdate(const std::string& instrument, const MarketDepth& depth) override {
-        std::stringstream ss;
-        ss << "\n--- " << instrument << " MARKET DEPTH UPDATE ---\n";
-        for (auto it = depth.asks.rbegin(); it != depth.asks.rend(); ++it) {
-            ss << std::fixed << std::setprecision(2) << "       ASK: " << it->price << "  Qty: " << it->quantity << "\n";
-        }
-        ss << "---------------------------\n";
-        for (const auto& level : depth.bids) {
-            ss << std::fixed << std::setprecision(2) << "BID: " << level.price << "  Qty: " << level.quantity << "\n";
-        }
-        ss << "---------------------------";
-        Logger::log(LogLevel::INFO, ss.str());
     }
+private:
+    ZeroMQGateway& gateway_;
 };
 
-RestApiGateway* rest_gateway_ptr = nullptr;
 void signal_handler(int signal) {
-    Logger::log(LogLevel::INFO, "Shutdown signal received.");
-    if(rest_gateway_ptr) {
+    if (rest_gateway_ptr) {
         rest_gateway_ptr->stop();
     }
+    exit(signal);
 }
 
 int main() {
     Config config("config.json");
-    MatchingEngine engine(config.max_order_size);
-    ZeroMQGateway zmq_gateway("tcp://*:5555", engine);
-    RestApiGateway rest_gateway("localhost", 8080, engine);
-    rest_gateway_ptr = &rest_gateway;
-
     signal(SIGINT, signal_handler);
-    
+
+    MatchingEngine engine(config.max_order_size);
+    ZeroMQGateway zmq_gateway("tcp://*:5555", "tcp://*:5556");
+    rest_gateway_ptr = std::make_unique<RestApiGateway>("localhost", 8080, engine);
+
     ConsoleTradeListener trade_listener;
-    ConsoleMarketDataListener md_listener;
+    ZmqMarketDataListener md_listener(zmq_gateway);
 
     engine.addListener(&trade_listener);
     engine.addMarketDataListener(&md_listener);
 
-    rest_gateway.run();
-    
+    std::thread rest_thread(&RestApiGateway::run, rest_gateway_ptr.get());
+    std::thread zmq_thread(&ZeroMQGateway::start, &zmq_gateway);
     std::thread engine_thread(&MatchingEngine::run, &engine);
-    std::thread zmq_gateway_thread(&ZeroMQGateway::run, &zmq_gateway);
 
-    Logger::log(LogLevel::INFO, "Engine and Gateways are running. Press Ctrl+C to exit.");
-    
+    std::cout << "System is running. Press Ctrl+C to exit." << std::endl;
+
     engine_thread.join();
-    zmq_gateway_thread.join();
+    zmq_thread.join();
+    rest_thread.join();
 
     return 0;
 }

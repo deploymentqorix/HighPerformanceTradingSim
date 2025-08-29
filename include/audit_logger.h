@@ -1,14 +1,11 @@
-#pragma once
-#include "command.h"
 #include <fstream>
-#include <string>
+#include "command.h"
 
 class AuditLogger {
 public:
-    explicit AuditLogger(const std::string& filepath);
-    ~AuditLogger();
-    void logCommand(const Command& command);
+    explicit AuditLogger(const std::string& filename);
+    void logCommand(const Command& cmd);
 
 private:
-    std::ofstream audit_file_;
+    std::ofstream log_file;  // <-- missing field
 };

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/l-100963/HighPerformanceTradingSim/include -I/home/l-100963/HighPerformanceTradingSim/third_party -I/usr/include/pgm-5.3 -I/usr/include/libxml2
+CXX_INCLUDES = -I/home/l-100963/HighPerformanceTradingSim/build/HighPerformanceTradingSim_autogen/include -I/home/l-100963/HighPerformanceTradingSim/include -I/home/l-100963/HighPerformanceTradingSim/third_party -I/usr/include/pgm-5.3 -I/usr/include/libxml2 -I/usr/include/lua5.3
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
+CXX_FLAGS = -std=gnu++20
 

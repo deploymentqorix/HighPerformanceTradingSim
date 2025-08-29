@@ -69,10 +69,31 @@ include CMakeFiles/HighPerformanceTradingSim.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 
+HighPerformanceTradingSim_autogen/timestamp: /usr/lib/qt5/bin/moc
+HighPerformanceTradingSim_autogen/timestamp: /usr/lib/qt5/bin/uic
+HighPerformanceTradingSim_autogen/timestamp: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target HighPerformanceTradingSim"
+	/usr/bin/cmake -E cmake_autogen /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles/HighPerformanceTradingSim_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/l-100963/HighPerformanceTradingSim/build/HighPerformanceTradingSim_autogen/timestamp
+
+CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
+CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o: HighPerformanceTradingSim_autogen/mocs_compilation.cpp
+CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o -c /home/l-100963/HighPerformanceTradingSim/build/HighPerformanceTradingSim_autogen/mocs_compilation.cpp
+
+CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100963/HighPerformanceTradingSim/build/HighPerformanceTradingSim_autogen/mocs_compilation.cpp > CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100963/HighPerformanceTradingSim/build/HighPerformanceTradingSim_autogen/mocs_compilation.cpp -o CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/main.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/main.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.i: cmake_force
@@ -86,7 +107,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/config.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/config.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.i: cmake_force
@@ -100,7 +121,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/zeromq_gateway.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/zeromq_gateway.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.i: cmake_force
@@ -111,24 +132,10 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100963/HighPerformanceTradingSim/src/zeromq_gateway.cpp -o CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.s
 
-CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
-CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/rest_api_gateway.cpp
-CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/rest_api_gateway.cpp
-
-CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100963/HighPerformanceTradingSim/src/rest_api_gateway.cpp > CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.i
-
-CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100963/HighPerformanceTradingSim/src/rest_api_gateway.cpp -o CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.s
-
 CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/matching_engine.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/matching_engine.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.i: cmake_force
@@ -142,7 +149,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/order.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/order.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.i: cmake_force
@@ -156,7 +163,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/order_book.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/order_book.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.i: cmake_force
@@ -170,7 +177,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/logger.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/logger.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.i: cmake_force
@@ -184,7 +191,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/logger.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/risk_manager.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/risk_manager.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.i: cmake_force
@@ -198,7 +205,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/accounting_manager.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/accounting_manager.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.i: cmake_force
@@ -212,7 +219,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.s: cmake_for
 CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/audit_logger.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/audit_logger.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.i: cmake_force
@@ -226,7 +233,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/trading_bot.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/trading_bot.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.i: cmake_force
@@ -240,7 +247,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/trading_bot.cpp.s: cmake_force
 CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/flags.make
 CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/scripting_engine.cpp
 CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o: CMakeFiles/HighPerformanceTradingSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o -MF CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o.d -o CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/scripting_engine.cpp
 
 CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.i: cmake_force
@@ -253,10 +260,10 @@ CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.s: cmake_force
 
 # Object files for target HighPerformanceTradingSim
 HighPerformanceTradingSim_OBJECTS = \
+"CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o" \
-"CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o" \
 "CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o" \
@@ -270,10 +277,10 @@ HighPerformanceTradingSim_OBJECTS = \
 # External object files for target HighPerformanceTradingSim
 HighPerformanceTradingSim_EXTERNAL_OBJECTS =
 
+HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/config.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o
-HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/matching_engine.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o
@@ -285,7 +292,7 @@ HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/trading_
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/build.make
 HighPerformanceTradingSim: CMakeFiles/HighPerformanceTradingSim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable HighPerformanceTradingSim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable HighPerformanceTradingSim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HighPerformanceTradingSim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -296,7 +303,7 @@ CMakeFiles/HighPerformanceTradingSim.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/HighPerformanceTradingSim.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/HighPerformanceTradingSim.dir/clean
 
-CMakeFiles/HighPerformanceTradingSim.dir/depend:
+CMakeFiles/HighPerformanceTradingSim.dir/depend: HighPerformanceTradingSim_autogen/timestamp
 	cd /home/l-100963/HighPerformanceTradingSim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/l-100963/HighPerformanceTradingSim /home/l-100963/HighPerformanceTradingSim /home/l-100963/HighPerformanceTradingSim/build /home/l-100963/HighPerformanceTradingSim/build /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles/HighPerformanceTradingSim.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/HighPerformanceTradingSim.dir/depend
 

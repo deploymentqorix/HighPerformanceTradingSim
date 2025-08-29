@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/TradingUI.dir/src/main_ui.cpp.o CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o -o TradingUI 
+/usr/bin/c++ CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o CMakeFiles/TradingUI.dir/src/main_ui.cpp.o CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o -o TradingUI  /usr/lib/x86_64-linux-gnu/libQt5Charts.so.5.15.13 -lzmq /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "TradingUI_autogen/timestamp" "custom" "TradingUI_autogen/deps"
+  "/home/l-100963/HighPerformanceTradingSim/build/TradingUI_autogen/mocs_compilation.cpp" "CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o.d"
   "/home/l-100963/HighPerformanceTradingSim/src/main_ui.cpp" "CMakeFiles/TradingUI.dir/src/main_ui.cpp.o" "gcc" "CMakeFiles/TradingUI.dir/src/main_ui.cpp.o.d"
   "/home/l-100963/HighPerformanceTradingSim/src/ui/main_window.cpp" "CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o" "gcc" "CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o.d"
   )

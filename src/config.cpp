@@ -1,24 +1,29 @@
 #include "config.h"
 #include <fstream>
-#include <stdexcept>
-#include <sstream>
+#include <nlohmann/json.hpp>  // if you use JSON parsing
+using json = nlohmann::json;
+
+Config::Config() {}
 
 Config::Config(const std::string& filepath) {
-    std::ifstream file(filepath);
-    if (!file.is_open()) {
-        throw std::runtime_error("Failed to open config file: " + filepath);
-    }
+    std::ifstream f(filepath);
+    if (f.is_open()) {
+        json j;
+        f >> j;
 
-    std::string line;
-    while (std::getline(file, line)) {
-        std::istringstream iss(line);
-        std::string key, value;
-        if (!(iss >> key >> value)) continue;
-
-        if (key == "max_order_size") {
-            max_order_size = std::stoi(value);
-        } else if (key == "csv_filepath") {
-            csv_filepath = value;
-        }
+        // Example: read max_order_size
+        if (j.contains("max_order_size"))
+            max_order_size = j["max_order_size"];
+        else
+            max_order_size = 1000; // default
+    } else {
+        max_order_size = 1000; // fallback
     }
+}
+
+std::string Config::get(const std::string& key) const {
+    auto it = values.find(key);
+    if (it != values.end())
+        return it->second;
+    return "";
 }

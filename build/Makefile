@@ -155,6 +155,219 @@ TradingUI/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/build
 .PHONY : TradingUI/fast
 
+#=============================================================================
+# Target rules for targets named BackendTest
+
+# Build rule for target.
+BackendTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BackendTest
+.PHONY : BackendTest
+
+# fast build rule for target.
+BackendTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/build
+.PHONY : BackendTest/fast
+
+#=============================================================================
+# Target rules for targets named HighPerformanceTradingSim_autogen_timestamp_deps
+
+# Build rule for target.
+HighPerformanceTradingSim_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HighPerformanceTradingSim_autogen_timestamp_deps
+.PHONY : HighPerformanceTradingSim_autogen_timestamp_deps
+
+# fast build rule for target.
+HighPerformanceTradingSim_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build
+.PHONY : HighPerformanceTradingSim_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named HighPerformanceTradingSim_autogen
+
+# Build rule for target.
+HighPerformanceTradingSim_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HighPerformanceTradingSim_autogen
+.PHONY : HighPerformanceTradingSim_autogen
+
+# fast build rule for target.
+HighPerformanceTradingSim_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen.dir/build
+.PHONY : HighPerformanceTradingSim_autogen/fast
+
+#=============================================================================
+# Target rules for targets named CliClient_autogen_timestamp_deps
+
+# Build rule for target.
+CliClient_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CliClient_autogen_timestamp_deps
+.PHONY : CliClient_autogen_timestamp_deps
+
+# fast build rule for target.
+CliClient_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen_timestamp_deps.dir/build.make CMakeFiles/CliClient_autogen_timestamp_deps.dir/build
+.PHONY : CliClient_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named CliClient_autogen
+
+# Build rule for target.
+CliClient_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CliClient_autogen
+.PHONY : CliClient_autogen
+
+# fast build rule for target.
+CliClient_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen.dir/build.make CMakeFiles/CliClient_autogen.dir/build
+.PHONY : CliClient_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TradingUI_autogen_timestamp_deps
+
+# Build rule for target.
+TradingUI_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TradingUI_autogen_timestamp_deps
+.PHONY : TradingUI_autogen_timestamp_deps
+
+# fast build rule for target.
+TradingUI_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build.make CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build
+.PHONY : TradingUI_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named TradingUI_autogen
+
+# Build rule for target.
+TradingUI_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TradingUI_autogen
+.PHONY : TradingUI_autogen
+
+# fast build rule for target.
+TradingUI_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen.dir/build.make CMakeFiles/TradingUI_autogen.dir/build
+.PHONY : TradingUI_autogen/fast
+
+#=============================================================================
+# Target rules for targets named BackendTest_autogen_timestamp_deps
+
+# Build rule for target.
+BackendTest_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BackendTest_autogen_timestamp_deps
+.PHONY : BackendTest_autogen_timestamp_deps
+
+# fast build rule for target.
+BackendTest_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build.make CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build
+.PHONY : BackendTest_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named BackendTest_autogen
+
+# Build rule for target.
+BackendTest_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BackendTest_autogen
+.PHONY : BackendTest_autogen
+
+# fast build rule for target.
+BackendTest_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen.dir/build.make CMakeFiles/BackendTest_autogen.dir/build
+.PHONY : BackendTest_autogen/fast
+
+BackendTest_autogen/mocs_compilation.o: BackendTest_autogen/mocs_compilation.cpp.o
+.PHONY : BackendTest_autogen/mocs_compilation.o
+
+# target to build an object file
+BackendTest_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/BackendTest_autogen/mocs_compilation.cpp.o
+.PHONY : BackendTest_autogen/mocs_compilation.cpp.o
+
+BackendTest_autogen/mocs_compilation.i: BackendTest_autogen/mocs_compilation.cpp.i
+.PHONY : BackendTest_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+BackendTest_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/BackendTest_autogen/mocs_compilation.cpp.i
+.PHONY : BackendTest_autogen/mocs_compilation.cpp.i
+
+BackendTest_autogen/mocs_compilation.s: BackendTest_autogen/mocs_compilation.cpp.s
+.PHONY : BackendTest_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+BackendTest_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/BackendTest_autogen/mocs_compilation.cpp.s
+.PHONY : BackendTest_autogen/mocs_compilation.cpp.s
+
+CliClient_autogen/mocs_compilation.o: CliClient_autogen/mocs_compilation.cpp.o
+.PHONY : CliClient_autogen/mocs_compilation.o
+
+# target to build an object file
+CliClient_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient.dir/build.make CMakeFiles/CliClient.dir/CliClient_autogen/mocs_compilation.cpp.o
+.PHONY : CliClient_autogen/mocs_compilation.cpp.o
+
+CliClient_autogen/mocs_compilation.i: CliClient_autogen/mocs_compilation.cpp.i
+.PHONY : CliClient_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+CliClient_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient.dir/build.make CMakeFiles/CliClient.dir/CliClient_autogen/mocs_compilation.cpp.i
+.PHONY : CliClient_autogen/mocs_compilation.cpp.i
+
+CliClient_autogen/mocs_compilation.s: CliClient_autogen/mocs_compilation.cpp.s
+.PHONY : CliClient_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+CliClient_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient.dir/build.make CMakeFiles/CliClient.dir/CliClient_autogen/mocs_compilation.cpp.s
+.PHONY : CliClient_autogen/mocs_compilation.cpp.s
+
+HighPerformanceTradingSim_autogen/mocs_compilation.o: HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.o
+
+# target to build an object file
+HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o
+
+HighPerformanceTradingSim_autogen/mocs_compilation.i: HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.cpp.i
+
+HighPerformanceTradingSim_autogen/mocs_compilation.s: HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s
+.PHONY : HighPerformanceTradingSim_autogen/mocs_compilation.cpp.s
+
+TradingUI_autogen/mocs_compilation.o: TradingUI_autogen/mocs_compilation.cpp.o
+.PHONY : TradingUI_autogen/mocs_compilation.o
+
+# target to build an object file
+TradingUI_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o
+.PHONY : TradingUI_autogen/mocs_compilation.cpp.o
+
+TradingUI_autogen/mocs_compilation.i: TradingUI_autogen/mocs_compilation.cpp.i
+.PHONY : TradingUI_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TradingUI_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.i
+.PHONY : TradingUI_autogen/mocs_compilation.cpp.i
+
+TradingUI_autogen/mocs_compilation.s: TradingUI_autogen/mocs_compilation.cpp.s
+.PHONY : TradingUI_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TradingUI_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.s
+.PHONY : TradingUI_autogen/mocs_compilation.cpp.s
+
 src/accounting_manager.o: src/accounting_manager.cpp.o
 .PHONY : src/accounting_manager.o
 
@@ -299,6 +512,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/main_backend_test.o: src/main_backend_test.cpp.o
+.PHONY : src/main_backend_test.o
+
+# target to build an object file
+src/main_backend_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/src/main_backend_test.cpp.o
+.PHONY : src/main_backend_test.cpp.o
+
+src/main_backend_test.i: src/main_backend_test.cpp.i
+.PHONY : src/main_backend_test.i
+
+# target to preprocess a source file
+src/main_backend_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/src/main_backend_test.cpp.i
+.PHONY : src/main_backend_test.cpp.i
+
+src/main_backend_test.s: src/main_backend_test.cpp.s
+.PHONY : src/main_backend_test.s
+
+# target to generate assembly for a file
+src/main_backend_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/src/main_backend_test.cpp.s
+.PHONY : src/main_backend_test.cpp.s
+
 src/main_ui.o: src/main_ui.cpp.o
 .PHONY : src/main_ui.o
 
@@ -394,30 +631,6 @@ src/order_book.s: src/order_book.cpp.s
 src/order_book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.s
 .PHONY : src/order_book.cpp.s
-
-src/rest_api_gateway.o: src/rest_api_gateway.cpp.o
-.PHONY : src/rest_api_gateway.o
-
-# target to build an object file
-src/rest_api_gateway.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o
-.PHONY : src/rest_api_gateway.cpp.o
-
-src/rest_api_gateway.i: src/rest_api_gateway.cpp.i
-.PHONY : src/rest_api_gateway.i
-
-# target to preprocess a source file
-src/rest_api_gateway.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.i
-.PHONY : src/rest_api_gateway.cpp.i
-
-src/rest_api_gateway.s: src/rest_api_gateway.cpp.s
-.PHONY : src/rest_api_gateway.s
-
-# target to generate assembly for a file
-src/rest_api_gateway.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.s
-.PHONY : src/rest_api_gateway.cpp.s
 
 src/risk_manager.o: src/risk_manager.cpp.o
 .PHONY : src/risk_manager.o
@@ -547,9 +760,30 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BackendTest_autogen"
+	@echo "... BackendTest_autogen_timestamp_deps"
+	@echo "... CliClient_autogen"
+	@echo "... CliClient_autogen_timestamp_deps"
+	@echo "... HighPerformanceTradingSim_autogen"
+	@echo "... HighPerformanceTradingSim_autogen_timestamp_deps"
+	@echo "... TradingUI_autogen"
+	@echo "... TradingUI_autogen_timestamp_deps"
+	@echo "... BackendTest"
 	@echo "... CliClient"
 	@echo "... HighPerformanceTradingSim"
 	@echo "... TradingUI"
+	@echo "... BackendTest_autogen/mocs_compilation.o"
+	@echo "... BackendTest_autogen/mocs_compilation.i"
+	@echo "... BackendTest_autogen/mocs_compilation.s"
+	@echo "... CliClient_autogen/mocs_compilation.o"
+	@echo "... CliClient_autogen/mocs_compilation.i"
+	@echo "... CliClient_autogen/mocs_compilation.s"
+	@echo "... HighPerformanceTradingSim_autogen/mocs_compilation.o"
+	@echo "... HighPerformanceTradingSim_autogen/mocs_compilation.i"
+	@echo "... HighPerformanceTradingSim_autogen/mocs_compilation.s"
+	@echo "... TradingUI_autogen/mocs_compilation.o"
+	@echo "... TradingUI_autogen/mocs_compilation.i"
+	@echo "... TradingUI_autogen/mocs_compilation.s"
 	@echo "... src/accounting_manager.o"
 	@echo "... src/accounting_manager.i"
 	@echo "... src/accounting_manager.s"
@@ -568,6 +802,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_backend_test.o"
+	@echo "... src/main_backend_test.i"
+	@echo "... src/main_backend_test.s"
 	@echo "... src/main_ui.o"
 	@echo "... src/main_ui.i"
 	@echo "... src/main_ui.s"
@@ -580,9 +817,6 @@ help:
 	@echo "... src/order_book.o"
 	@echo "... src/order_book.i"
 	@echo "... src/order_book.s"
-	@echo "... src/rest_api_gateway.o"
-	@echo "... src/rest_api_gateway.i"
-	@echo "... src/rest_api_gateway.s"
 	@echo "... src/risk_manager.o"
 	@echo "... src/risk_manager.i"
 	@echo "... src/risk_manager.s"

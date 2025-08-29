@@ -1,15 +1,21 @@
 #pragma once
+#include <string>
 
-// REQ-001: Define order side (Buy/Sell)
-// REQ-002: Define order type (Limit/Market)
-enum class Side { Buy, Sell };
-enum class OrderType { Limit, Market };
+// Assuming Side is an enum defined somewhere, like this:
+enum class Side { BUY, SELL };
 
-// REQ-003: Basic Order struct with id, side, type, price, qty
 struct Order {
-    int id;             // REQ-004: Unique Order ID
-    Side side;          // REQ-005: Order direction (Buy/Sell)
-    OrderType type;     // REQ-006: Order type (Limit/Market)
-    double price;       // REQ-007: Price field
-    int qty;            // REQ-008: Quantity field
+    // --- Member Variables ---
+    std::string orderId; // CHANGED: from "id" to "orderId" to match your .cpp file
+    Side side;
+    double price;
+    int quantity;
+    long timestamp;
+
+    // --- Constructors ---
+    Order() = default;
+    Order(std::string id, Side side, double price, int quantity, long timestamp);
+
+    // --- Member Functions ---
+    std::string toString() const;
 };

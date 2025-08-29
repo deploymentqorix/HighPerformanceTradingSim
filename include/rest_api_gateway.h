@@ -2,26 +2,40 @@
 #include <string>
 #include <map>
 #include <nlohmann/json.hpp>
+#include <memory> // ADDED: for std::unique_ptr
+
+// Forward-declare the MatchingEngine and the HTTP server class
+class MatchingEngine;
+namespace httplib {
+    class Server;
+}
 
 // Requirement Mapping
-// QCSIDM_SRS_040 - External API for order submission
-// QCSIDM_SRS_041 - Cancel/modify orders
-// QCSIDM_SRS_042 - Query order status
-// QCSIDM_SRS_043 - Query account/position
-// QCSIDM_SRS_044 - Input validation
-// QCSIDM_SRS_045 - JSON structured responses
-// QCSIDM_SRS_046 - Error handling
+// ... (your existing mappings)
 
 class RestApiGateway {
 public:
-    RestApiGateway();
+    RestApiGateway(const std::string& host, int port, MatchingEngine& engine);
+    ~RestApiGateway(); // ADDED: Destructor for proper cleanup
 
-    std::string submitOrder(const std::string& orderJson);     // SRS_040
-    std::string cancelOrder(const std::string& orderId);       // SRS_041
-    std::string getOrderStatus(const std::string& orderId);    // SRS_042
-    std::string getAccountInfo(const std::string& accountId);  // SRS_043
+    void run();  // ADDED: To start the web server
+    void stop(); // ADDED: To stop the web server
+
+    // --- Existing API methods ---
+    std::string submitOrder(const std::string& orderJson);
+    std::string cancelOrder(const std::string& orderId);
+    std::string getOrderStatus(const std::string& orderId);
+    std::string getAccountInfo(const std::string& accountId);
 
 private:
-    bool validateJson(const nlohmann::json& j); // SRS_044
-    std::string makeErrorResponse(const std::string& msg); // SRS_046
+    void setupRoutes(); // ADDED: Helper to define API endpoints like /order
+
+    bool validateJson(const nlohmann::json& j);
+    std::string makeErrorResponse(const std::string& msg);
+    
+    // --- Private Members ---
+    MatchingEngine& matchingEngine; // ADDED: Reference to the engine
+    std::unique_ptr<httplib::Server> server; // ADDED: The HTTP server object
+    std::string apiHost; // ADDED
+    int apiPort; // ADDED
 };

@@ -69,10 +69,31 @@ include CMakeFiles/TradingUI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TradingUI.dir/flags.make
 
+TradingUI_autogen/timestamp: /usr/lib/qt5/bin/moc
+TradingUI_autogen/timestamp: /usr/lib/qt5/bin/uic
+TradingUI_autogen/timestamp: CMakeFiles/TradingUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target TradingUI"
+	/usr/bin/cmake -E cmake_autogen /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles/TradingUI_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/l-100963/HighPerformanceTradingSim/build/TradingUI_autogen/timestamp
+
+CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o: CMakeFiles/TradingUI.dir/flags.make
+CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o: TradingUI_autogen/mocs_compilation.cpp
+CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o: CMakeFiles/TradingUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o -MF CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o -c /home/l-100963/HighPerformanceTradingSim/build/TradingUI_autogen/mocs_compilation.cpp
+
+CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/l-100963/HighPerformanceTradingSim/build/TradingUI_autogen/mocs_compilation.cpp > CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/l-100963/HighPerformanceTradingSim/build/TradingUI_autogen/mocs_compilation.cpp -o CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/TradingUI.dir/src/main_ui.cpp.o: CMakeFiles/TradingUI.dir/flags.make
 CMakeFiles/TradingUI.dir/src/main_ui.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/main_ui.cpp
 CMakeFiles/TradingUI.dir/src/main_ui.cpp.o: CMakeFiles/TradingUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TradingUI.dir/src/main_ui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TradingUI.dir/src/main_ui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TradingUI.dir/src/main_ui.cpp.o -MF CMakeFiles/TradingUI.dir/src/main_ui.cpp.o.d -o CMakeFiles/TradingUI.dir/src/main_ui.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/main_ui.cpp
 
 CMakeFiles/TradingUI.dir/src/main_ui.cpp.i: cmake_force
@@ -86,7 +107,7 @@ CMakeFiles/TradingUI.dir/src/main_ui.cpp.s: cmake_force
 CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o: CMakeFiles/TradingUI.dir/flags.make
 CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o: /home/l-100963/HighPerformanceTradingSim/src/ui/main_window.cpp
 CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o: CMakeFiles/TradingUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o -MF CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o.d -o CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o -c /home/l-100963/HighPerformanceTradingSim/src/ui/main_window.cpp
 
 CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.i: cmake_force
@@ -99,17 +120,23 @@ CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.s: cmake_force
 
 # Object files for target TradingUI
 TradingUI_OBJECTS = \
+"CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/TradingUI.dir/src/main_ui.cpp.o" \
 "CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o"
 
 # External object files for target TradingUI
 TradingUI_EXTERNAL_OBJECTS =
 
+TradingUI: CMakeFiles/TradingUI.dir/TradingUI_autogen/mocs_compilation.cpp.o
 TradingUI: CMakeFiles/TradingUI.dir/src/main_ui.cpp.o
 TradingUI: CMakeFiles/TradingUI.dir/src/ui/main_window.cpp.o
 TradingUI: CMakeFiles/TradingUI.dir/build.make
+TradingUI: /usr/lib/x86_64-linux-gnu/libQt5Charts.so.5.15.13
+TradingUI: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
+TradingUI: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
+TradingUI: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 TradingUI: CMakeFiles/TradingUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TradingUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable TradingUI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TradingUI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -120,7 +147,7 @@ CMakeFiles/TradingUI.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/TradingUI.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/TradingUI.dir/clean
 
-CMakeFiles/TradingUI.dir/depend:
+CMakeFiles/TradingUI.dir/depend: TradingUI_autogen/timestamp
 	cd /home/l-100963/HighPerformanceTradingSim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/l-100963/HighPerformanceTradingSim /home/l-100963/HighPerformanceTradingSim /home/l-100963/HighPerformanceTradingSim/build /home/l-100963/HighPerformanceTradingSim/build /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles/TradingUI.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/TradingUI.dir/depend
 

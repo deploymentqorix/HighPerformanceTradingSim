@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/l-100963/HighPerformanceTradingSim/build
 all: CMakeFiles/HighPerformanceTradingSim.dir/all
 all: CMakeFiles/CliClient.dir/all
 all: CMakeFiles/TradingUI.dir/all
+all: CMakeFiles/BackendTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,21 +77,31 @@ preinstall:
 clean: CMakeFiles/HighPerformanceTradingSim.dir/clean
 clean: CMakeFiles/CliClient.dir/clean
 clean: CMakeFiles/TradingUI.dir/clean
+clean: CMakeFiles/BackendTest.dir/clean
+clean: CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/HighPerformanceTradingSim_autogen.dir/clean
+clean: CMakeFiles/CliClient_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/CliClient_autogen.dir/clean
+clean: CMakeFiles/TradingUI_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/TradingUI_autogen.dir/clean
+clean: CMakeFiles/BackendTest_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/BackendTest_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/HighPerformanceTradingSim.dir
 
 # All Build rule for target.
-CMakeFiles/HighPerformanceTradingSim.dir/all:
+CMakeFiles/HighPerformanceTradingSim.dir/all: CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/all
+CMakeFiles/HighPerformanceTradingSim.dir/all: CMakeFiles/HighPerformanceTradingSim_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim.dir/build.make CMakeFiles/HighPerformanceTradingSim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target HighPerformanceTradingSim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target HighPerformanceTradingSim"
 .PHONY : CMakeFiles/HighPerformanceTradingSim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HighPerformanceTradingSim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HighPerformanceTradingSim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
 .PHONY : CMakeFiles/HighPerformanceTradingSim.dir/rule
@@ -108,15 +119,16 @@ CMakeFiles/HighPerformanceTradingSim.dir/clean:
 # Target rules for target CMakeFiles/CliClient.dir
 
 # All Build rule for target.
-CMakeFiles/CliClient.dir/all:
+CMakeFiles/CliClient.dir/all: CMakeFiles/CliClient_autogen_timestamp_deps.dir/all
+CMakeFiles/CliClient.dir/all: CMakeFiles/CliClient_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient.dir/build.make CMakeFiles/CliClient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient.dir/build.make CMakeFiles/CliClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=1,2 "Built target CliClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=6,7,8,9 "Built target CliClient"
 .PHONY : CMakeFiles/CliClient.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CliClient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CliClient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
 .PHONY : CMakeFiles/CliClient.dir/rule
@@ -134,15 +146,16 @@ CMakeFiles/CliClient.dir/clean:
 # Target rules for target CMakeFiles/TradingUI.dir
 
 # All Build rule for target.
-CMakeFiles/TradingUI.dir/all:
+CMakeFiles/TradingUI.dir/all: CMakeFiles/TradingUI_autogen_timestamp_deps.dir/all
+CMakeFiles/TradingUI.dir/all: CMakeFiles/TradingUI_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=17,18,19 "Built target TradingUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=27,28,29,30,31 "Built target TradingUI"
 .PHONY : CMakeFiles/TradingUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TradingUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TradingUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
 .PHONY : CMakeFiles/TradingUI.dir/rule
@@ -155,6 +168,241 @@ TradingUI: CMakeFiles/TradingUI.dir/rule
 CMakeFiles/TradingUI.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI.dir/build.make CMakeFiles/TradingUI.dir/clean
 .PHONY : CMakeFiles/TradingUI.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BackendTest.dir
+
+# All Build rule for target.
+CMakeFiles/BackendTest.dir/all: CMakeFiles/BackendTest_autogen_timestamp_deps.dir/all
+CMakeFiles/BackendTest.dir/all: CMakeFiles/BackendTest_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=1,2,3,4 "Built target BackendTest"
+.PHONY : CMakeFiles/BackendTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BackendTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BackendTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/BackendTest.dir/rule
+
+# Convenience name for target.
+BackendTest: CMakeFiles/BackendTest.dir/rule
+.PHONY : BackendTest
+
+# clean rule for target.
+CMakeFiles/BackendTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest.dir/build.make CMakeFiles/BackendTest.dir/clean
+.PHONY : CMakeFiles/BackendTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num= "Built target HighPerformanceTradingSim_autogen_timestamp_deps"
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+HighPerformanceTradingSim_autogen_timestamp_deps: CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/rule
+.PHONY : HighPerformanceTradingSim_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/HighPerformanceTradingSim_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/HighPerformanceTradingSim_autogen.dir/all: CMakeFiles/HighPerformanceTradingSim_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=26 "Built target HighPerformanceTradingSim_autogen"
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HighPerformanceTradingSim_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HighPerformanceTradingSim_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen.dir/rule
+
+# Convenience name for target.
+HighPerformanceTradingSim_autogen: CMakeFiles/HighPerformanceTradingSim_autogen.dir/rule
+.PHONY : HighPerformanceTradingSim_autogen
+
+# clean rule for target.
+CMakeFiles/HighPerformanceTradingSim_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighPerformanceTradingSim_autogen.dir/build.make CMakeFiles/HighPerformanceTradingSim_autogen.dir/clean
+.PHONY : CMakeFiles/HighPerformanceTradingSim_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CliClient_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/CliClient_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen_timestamp_deps.dir/build.make CMakeFiles/CliClient_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen_timestamp_deps.dir/build.make CMakeFiles/CliClient_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num= "Built target CliClient_autogen_timestamp_deps"
+.PHONY : CMakeFiles/CliClient_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CliClient_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CliClient_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/CliClient_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+CliClient_autogen_timestamp_deps: CMakeFiles/CliClient_autogen_timestamp_deps.dir/rule
+.PHONY : CliClient_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/CliClient_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen_timestamp_deps.dir/build.make CMakeFiles/CliClient_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/CliClient_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CliClient_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/CliClient_autogen.dir/all: CMakeFiles/CliClient_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen.dir/build.make CMakeFiles/CliClient_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen.dir/build.make CMakeFiles/CliClient_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=10 "Built target CliClient_autogen"
+.PHONY : CMakeFiles/CliClient_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CliClient_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CliClient_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/CliClient_autogen.dir/rule
+
+# Convenience name for target.
+CliClient_autogen: CMakeFiles/CliClient_autogen.dir/rule
+.PHONY : CliClient_autogen
+
+# clean rule for target.
+CMakeFiles/CliClient_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliClient_autogen.dir/build.make CMakeFiles/CliClient_autogen.dir/clean
+.PHONY : CMakeFiles/CliClient_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TradingUI_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/TradingUI_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build.make CMakeFiles/TradingUI_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build.make CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num= "Built target TradingUI_autogen_timestamp_deps"
+.PHONY : CMakeFiles/TradingUI_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TradingUI_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TradingUI_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/TradingUI_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+TradingUI_autogen_timestamp_deps: CMakeFiles/TradingUI_autogen_timestamp_deps.dir/rule
+.PHONY : TradingUI_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/TradingUI_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen_timestamp_deps.dir/build.make CMakeFiles/TradingUI_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/TradingUI_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TradingUI_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/TradingUI_autogen.dir/all: CMakeFiles/TradingUI_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen.dir/build.make CMakeFiles/TradingUI_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen.dir/build.make CMakeFiles/TradingUI_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=32 "Built target TradingUI_autogen"
+.PHONY : CMakeFiles/TradingUI_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TradingUI_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TradingUI_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/TradingUI_autogen.dir/rule
+
+# Convenience name for target.
+TradingUI_autogen: CMakeFiles/TradingUI_autogen.dir/rule
+.PHONY : TradingUI_autogen
+
+# clean rule for target.
+CMakeFiles/TradingUI_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TradingUI_autogen.dir/build.make CMakeFiles/TradingUI_autogen.dir/clean
+.PHONY : CMakeFiles/TradingUI_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BackendTest_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/BackendTest_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build.make CMakeFiles/BackendTest_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build.make CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num= "Built target BackendTest_autogen_timestamp_deps"
+.PHONY : CMakeFiles/BackendTest_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BackendTest_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BackendTest_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/BackendTest_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+BackendTest_autogen_timestamp_deps: CMakeFiles/BackendTest_autogen_timestamp_deps.dir/rule
+.PHONY : BackendTest_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/BackendTest_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen_timestamp_deps.dir/build.make CMakeFiles/BackendTest_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/BackendTest_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BackendTest_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/BackendTest_autogen.dir/all: CMakeFiles/BackendTest_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen.dir/build.make CMakeFiles/BackendTest_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen.dir/build.make CMakeFiles/BackendTest_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/l-100963/HighPerformanceTradingSim/build/CMakeFiles --progress-num=5 "Built target BackendTest_autogen"
+.PHONY : CMakeFiles/BackendTest_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BackendTest_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BackendTest_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/l-100963/HighPerformanceTradingSim/build/CMakeFiles 0
+.PHONY : CMakeFiles/BackendTest_autogen.dir/rule
+
+# Convenience name for target.
+BackendTest_autogen: CMakeFiles/BackendTest_autogen.dir/rule
+.PHONY : BackendTest_autogen
+
+# clean rule for target.
+CMakeFiles/BackendTest_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BackendTest_autogen.dir/build.make CMakeFiles/BackendTest_autogen.dir/clean
+.PHONY : CMakeFiles/BackendTest_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

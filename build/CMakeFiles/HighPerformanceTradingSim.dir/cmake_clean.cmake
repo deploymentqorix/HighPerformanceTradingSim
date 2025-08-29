@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HighPerformanceTradingSim_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/HighPerformanceTradingSim_autogen.dir/ParseCache.txt"
+  "HighPerformanceTradingSim_autogen"
+  "CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/HighPerformanceTradingSim.dir/HighPerformanceTradingSim_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/accounting_manager.cpp.o.d"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/audit_logger.cpp.o"
@@ -15,8 +20,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/HighPerformanceTradingSim.dir/src/order.cpp.o.d"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/order_book.cpp.o.d"
-  "CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o"
-  "CMakeFiles/HighPerformanceTradingSim.dir/src/rest_api_gateway.cpp.o.d"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/risk_manager.cpp.o.d"
   "CMakeFiles/HighPerformanceTradingSim.dir/src/scripting_engine.cpp.o"
@@ -27,6 +30,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HighPerformanceTradingSim.dir/src/zeromq_gateway.cpp.o.d"
   "HighPerformanceTradingSim"
   "HighPerformanceTradingSim.pdb"
+  "HighPerformanceTradingSim_autogen/mocs_compilation.cpp"
+  "HighPerformanceTradingSim_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.
